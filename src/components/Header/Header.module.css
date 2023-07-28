@@ -1,0 +1,35 @@
+html {
+  font-size: 18px;
+  background: url('../../util/img/famsic_bg.jpg') rgba(0, 0, 0, 0.4);     
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+/* @font-face {
+  font-family: 'Aharoni';
+  src: url(../../util/font/ahronibd.ttf) format('truetype');
+} */
+
+.Header {
+  color: #F2F2F2;
+  text-align: center;
+}
+
+.Header h1 {
+  font-family: 'Bauhaus 93', sans-serif;
+  font-size: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 1.4rem;
+}
+
+.Header span {
+  color: #FFD966;
+}
+
+.Header h2 {
+  font-family: 'Berlin Sans FB Demi', sans-serif;
+  font-size: 1.4rem;
+}

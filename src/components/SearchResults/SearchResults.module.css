@@ -1,13 +1,12 @@
 .SearchResults {
   display: flex;
-  height: 95%;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0.5rem;
+  justify-content: space-between;
 }
 
 .Tracklist {
-  height: 78%;
+  height: 82%;
   overflow-y: scroll;
 }  
 

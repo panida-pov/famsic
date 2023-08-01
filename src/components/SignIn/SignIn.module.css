@@ -1,6 +1,5 @@
 .SignIn {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 }
 
@@ -13,20 +12,19 @@
 
 .button {
   position: absolute;
-  bottom: 15%;
-  padding: 0.6rem 1.6rem;
-  border: none;
-  border-radius: 1.4rem;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #C00000;
+  bottom: 15%;  
   cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 8rem;
+  padding: 0.7rem 0;
+  border-radius: 54px;
+  border-width: 0px;
+  text-align: center;
+  font-family: 'Berlin Sans FB Demi', sans-serif;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(192, 0, 0);
+  transition: background-color 0.25s;
 }
-
 .button:hover {
-  color: #0D0D0D;
-  background-color: #FFD966;
+  background-color: rgb(186, 143, 65);
 }

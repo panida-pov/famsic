@@ -5,17 +5,17 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-.Track-action {
+.Track button {
   cursor: pointer;
   padding: .5rem;
   font-size: 1.05rem;
   transition: color .25s;
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
-.Track-action:hover {
+.Track button:hover {
   color: rgba(265, 265, 265, .5);
 }
 

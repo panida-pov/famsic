@@ -11,12 +11,12 @@
 }
 
 .SearchBar input {
-  width: 10rem;
-  border-radius: 3px;
-  border: none;
-  font-size: 0.7rem;
-  background-color: transparent;
+  width: 100%;
   padding-left: 0.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: inherit;
 }
 
 .SearchBar input:focus {

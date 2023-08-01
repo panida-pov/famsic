@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #D9D9D9;
-  border: 0.12rem solid #C00000;
+  background-color: rgb(217, 217, 217);
+  border: 0.12rem solid rgb(192, 0, 0);
   border-radius: 2rem;
   padding: 0.3rem 0.5rem;
-  color: #C00000;
+  color: rgb(192, 0, 0);
   height: 1.2rem;
 }
 
@@ -17,6 +17,8 @@
   background-color: transparent;
   font-size: 0.9rem;
   color: inherit;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
 .SearchBar input:focus {

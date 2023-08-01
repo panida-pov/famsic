@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Aharoni';
+  src: url(/public/font/ahronibd.ttf) format('truetype');
+}
+
+.NewPlaylist {
+  width: 100%;
+  height: 82%;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center ;
+}
+
+.NewPlaylist input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid rgba(255, 217, 102, 0.5);
+  font-family: 'Berlin Sans FB Demi', sans-serif;
+  font-size: 1.3rem;
+  color: rgb(255, 217, 102);
+  padding-bottom: 0.3rem;
+}
+
+.NewPlaylist input::placeholder{
+  color:rgb(255, 217, 102, 0.65);
+}
+
+.Tracklist {
+  width: 100%;
+  height: 63%;
+  overflow-y: scroll;
+}  
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.create {
+  cursor: pointer;
+  width: 10rem;
+  padding: .77rem 0;
+  border-radius: 54px;
+  border-width: 0px;
+  background-color: rgb(192, 0, 0);
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Aharoni', sans-serif;
+  transition: background-color 0.25s;
+}
+
+.create:hover {
+  background-color: rgb(255, 217, 102, 0.65);
+}

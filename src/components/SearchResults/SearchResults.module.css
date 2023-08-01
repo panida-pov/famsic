@@ -1,0 +1,17 @@
+.SearchResults {
+  display: flex;
+  height: 95%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.Tracklist {
+  height: 78%;
+  overflow-y: scroll;
+}  
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

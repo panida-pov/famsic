@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Aharoni';
+  src: url(/public/font/ahronibd.ttf) format('truetype');
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(73, 9, 7, 0.85);
+  width: 80%;
+  height: 20rem;
+  z-index: 2;
+  border-radius: 2rem;
+  border: 1.5px solid rgb(127, 127, 127);
+  box-shadow: 0 4px 2px 2px rgb(37, 35, 35);
+  margin: 0 auto;
+  padding: 2.2rem 0;
+}
+
+.newPlaylistField {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.title button {
+  padding: 0 1.3rem;
+  border: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  color: rgb(192, 0, 0);
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.FaCircle {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-size: 1.8rem;
+  top: 0;
+  left:0;
+}
+
+.FaCircleLeft {
+  position: absolute;
+  color: rgb(192, 0, 0);
+  z-index: 10;
+  font-size: 1.8rem;
+  top: 0;
+  left:0;
+}
+
+.FaCircleLeft:hover {
+  color: rgb(186, 143, 65)
+}
+
+.title h3 {
+  font-family: 'Aharoni', sans-serif;
+  font-size: 1.3rem;
+  padding-top: 0.2rem;
+}
+
+.searchField {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .box {
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .newPlaylistField,
+  .searchField {
+    width: 80%;
+    height: 20rem;
+    padding-bottom: 2rem;
+  }
+}

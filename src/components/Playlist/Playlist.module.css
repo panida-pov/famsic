@@ -1,0 +1,31 @@
+.Playlist {
+  width: 11rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.8rem 0.5rem;
+}
+
+.Playlist p {
+  width: 100%;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.imgContainer {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: auto;
+}
+

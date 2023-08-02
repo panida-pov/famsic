@@ -1,5 +1,5 @@
 import Tracklist from "../Tracklist/Tracklist";
-import styles from "./NewPlaylist.module.css"
+import styles from "./NewPlaylist.module.css";
 
 function NewPlaylist() {
   return (

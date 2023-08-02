@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Aharoni';
+  src: url(/public/font/ahronibd.ttf) format('truetype');
+}
+
+.Playlists {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9rem 1.4rem 9rem; 
+}
+
+.top h3 {
+  font-family: 'Aharoni', sans-serif;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+}
+
+.contents {
+  box-sizing: border-box;
+  width: 100%;
+  height: 90%;
+  padding: 0 4rem;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, max-content));
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.addPlaylist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 6.5rem;
+  border: solid rgb(242, 242, 242) 0.2rem;
+  border-radius: 1.5rem;
+  font-family: 'Aharoni', sans-serif;
+  font-size: 0.8rem;
+  transition: background-color 0.3s;
+}
+
+.addPlaylist:hover {  
+  background-color: rgb(255, 217, 102, 0.6);
+  cursor: pointer;
+}
+
+.FaCirclePlus {
+  font-size: 2rem;
+  padding-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    height: 4.5rem;
+    padding: 0.5rem 4rem; 
+  }
+
+  .contents {
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+}

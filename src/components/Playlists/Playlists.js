@@ -3,6 +3,7 @@ import CreatePlaylistStyles from "../CreatePlaylist/CreatePlaylist.module.css";
 import styles from "./Playlists.module.css";
 import SearchBar from "../SearchBar/SearchBar";
 import { FaCirclePlus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Playlists() {
   return (
@@ -14,10 +15,12 @@ function Playlists() {
         </div>
         <div className={styles.contents}>
           <Playlist />
-          <div className={styles.addPlaylist}>
-            <FaCirclePlus className={styles.FaCirclePlus}/>
-            ADD MORE
-          </div>
+          <Link to="create-playlist" style={{textDecoration: 'none'}}>
+            <button className={styles.addPlaylist}>
+              <FaCirclePlus className={styles.FaCirclePlus}/>
+              ADD MORE
+            </button>
+          </Link>
         </div>
       </div>
     </div>

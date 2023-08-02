@@ -53,6 +53,8 @@
   border-radius: 1.5rem;
   font-family: 'Aharoni', sans-serif;
   font-size: 0.8rem;
+  color: rgb(242, 242, 242);
+  background-color: transparent;
   transition: background-color 0.3s;
 }
 

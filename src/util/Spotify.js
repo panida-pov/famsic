@@ -154,9 +154,9 @@ export const Spotify = {
       .then(jsonResponse => {
         if(jsonResponse) {
           return jsonResponse.items.map(item => ({
-              name: track.name,
-              artist: track.artists[0].name,
-              album: track.album.name
+              name: item.track.name,
+              artist: item.track.artists[0].name,
+              album: item.track.album.name
             }));
         }
         return [];

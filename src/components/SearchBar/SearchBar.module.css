@@ -12,7 +12,7 @@
 
 .SearchBar input {
   width: 100%;
-  padding-left: 0.5rem;
+  padding-left: 0.1rem;
   border: none;
   background-color: transparent;
   font-size: 0.9rem;
@@ -33,4 +33,12 @@
   background-color: inherit;
   color: inherit;
   font-size: 0.9rem;
+}
+
+.clearButton {
+  opacity: 0.4;
+}
+
+.clearButton:hover {
+  opacity: 1;
 }

@@ -56,6 +56,7 @@
   color: rgb(242, 242, 242);
   background-color: transparent;
   transition: background-color 0.3s;
+  padding: 0.8rem 0.5rem;
 }
 
 .addPlaylist:hover {  

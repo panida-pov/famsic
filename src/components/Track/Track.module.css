@@ -5,7 +5,7 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-.Track button {
+.TrackAction {
   cursor: pointer;
   padding: .5rem;
   font-size: 1.05rem;
@@ -15,7 +15,7 @@
   color: rgb(255, 255, 255);
 }
 
-.Track button:hover {
+.TrackAction:hover {
   color: rgba(265, 265, 265, .5);
 }
 

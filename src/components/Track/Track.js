@@ -1,23 +1,27 @@
 import styles from './Track.module.css'
+import { useDispatch } from 'react-redux';
+import { addToList, removeFromList } from '../NewPlaylist/newPlaylistSlice';
 
-// ------ Sample track ------
-const tracks = {
-  name: 'Photograph',
-  artist: 'Ed Sheeran',
-  album: 'X (Deluxe Edition)'
-}
-// --------------------------
+function Track({track, action}) {
+  const dispatch = useDispatch();
 
-function Track() {
+  const renderButton = (action) => {
+    if (action === 'add') {
+      return <button className={styles.TrackAction} onClick={() => dispatch(addToList(track))}>+</button>;
+    } else {
+      return <button className={styles.TrackAction} onClick={() => dispatch(removeFromList(track.id))}>-</button>;
+    };
+  }
+
   return (
     <div className={styles.Track}>
       <div className={styles.TrackInformation}>
-        <h3>{tracks.name}</h3>
+        <h3>{track.name}</h3>
         <p>
-          {tracks.artist} | {tracks.album}
+          {track.artist} | {track.album}
         </p>
       </div>
-      <button>+</button>
+      {renderButton(action)}
     </div>
   )
 }

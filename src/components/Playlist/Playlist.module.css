@@ -21,11 +21,18 @@
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 1.5rem;
+  border: 0.2rem solid transparent;
   overflow: hidden;
+  transition: border 0.3s linear 0.01s;
 }
 
 .imgContainer img {
   width: 100%;
   height: auto;
+}
+
+.imgContainer:hover {
+  cursor: pointer; 
+  border: 0.2rem solid rgb(242, 242, 242);
 }
 

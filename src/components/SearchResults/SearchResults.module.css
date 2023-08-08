@@ -7,10 +7,20 @@
 
 .Tracklist {
   height: 82%;
+  padding-right: 0.3rem;
   overflow-y: scroll;
 }  
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
   background: transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(142, 2, 2); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(176, 3, 3, 0.85); 
 }

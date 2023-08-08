@@ -49,5 +49,6 @@ const playlistSlice = createSlice(options);
 
 export const selectPlaylistInfo = (state) => state.currentPlaylist.info;
 export const selectCurrentTracks = (state) => state.currentPlaylist.tracks;
+export const isLoadingTracks = (state) => state.currentPlaylist.isLoading;
 export const { setCurrentInfo } = playlistSlice.actions;
 export default playlistSlice.reducer;

@@ -10,11 +10,7 @@ export const Spotify = {
         return accessToken;
       }
   
-      let accessUrl = 'https://accounts.spotify.com/authorize';
-      accessUrl += '?response_type=token';
-      accessUrl += '&client_id=' + client_id;
-      accessUrl += '&scope=' + 'playlist-modify-public';
-      accessUrl += '&redirect_uri=' + redirect_uri;
+      let accessUrl = `https://accounts.spotify.com/authorize?response_type=token&client_id=${client_id}&scope=playlist-modify-public&redirect_uri=${redirect_uri}`;
     
       const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
       const expiresInMatch = window.location.href.match(/expires_in=([0-9]*)/);
@@ -126,7 +122,8 @@ export const Spotify = {
         if(jsonResponse) {
           return jsonResponse.items.map(item => ({
               name: item.name,
-              image: item.images[0].url
+              image: item.images[0].url,
+              id: item.id
             }));
         }
         return [];
@@ -143,7 +140,7 @@ export const Spotify = {
         Authorization: `Bearer ${token}`
       }
 
-      return fetch(`https://api.spotify.com/v1/playlists/${id}/tracks`, {
+      return fetch(`https://api.spotify.com/v1/playlists/${id}/tracks?limit=20&fields=items.track(name, album.name, artists.name)`, {
         headers: headers
       })
       .then(response => {

@@ -8,7 +8,8 @@ function Track({track, action}) {
   const renderButton = (action) => {
     if (action === 'add') {
       return <button className={styles.TrackAction} onClick={() => dispatch(addToList(track))}>+</button>;
-    } else {
+    } 
+    if (action === 'remove') {
       return <button className={styles.TrackAction} onClick={() => dispatch(removeFromList(track.id))}>-</button>;
     };
   }

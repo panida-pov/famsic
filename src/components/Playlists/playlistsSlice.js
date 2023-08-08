@@ -37,4 +37,5 @@ const options = {
 const playlistsSlice = createSlice(options);
 
 export const selectPlaylists = (state) => state.playlists.playlists;
+export const isLoadingPlaylists = (state) => state.playlists.isLoading;
 export default playlistsSlice.reducer;

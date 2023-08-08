@@ -11,8 +11,8 @@ function CreatePlaylist() {
         <div className={styles.title}>
           <Link to="/">
             <button>
-                <FaCircle className={styles.FaCircle}/>
-                <FaCircleLeft className={styles.FaCircleLeft}/>
+              <FaCircle className={styles.FaCircle}/>
+              <FaCircleLeft className={styles.FaCircleLeft}/>
             </button>
           </Link>
           <h3>CREATE NEW PLAYLIST</h3>

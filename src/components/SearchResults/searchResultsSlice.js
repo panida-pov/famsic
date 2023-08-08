@@ -40,5 +40,6 @@ const options = {
 const searchResultsSlice = createSlice(options);
 
 export const selectSearchResults = (state) => state.searchResults.tracks;
+export const isLoadingSearchResults = (state) => state.searchResults.isLoading;
 export const { addSearchResults } = searchResultsSlice.actions;
 export default searchResultsSlice.reducer;

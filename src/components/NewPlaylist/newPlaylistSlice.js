@@ -61,5 +61,6 @@ const newPlaylistSlice = createSlice(options);
 
 export const selectPlaylistName = (state) => state.newPlaylist.playlistName;
 export const selectTracks = (state) => state.newPlaylist.selectedTracks;
+export const isCreatingPlaylist = (state) => state.newPlaylist.isCreating;
 export const { setName, addToList, removeFromList } = newPlaylistSlice.actions;
 export default newPlaylistSlice.reducer;

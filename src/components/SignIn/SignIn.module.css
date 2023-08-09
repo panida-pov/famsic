@@ -1,18 +1,18 @@
 .SignIn {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20rem;
+  padding: 2.2rem 0;
 }
 
 .logo {
-  width: 15%;
-  position: absolute;
-  bottom: 25%;
-  margin: 0 auto;
+  height: 4rem;
+  margin-bottom: 1.2rem;
 }
 
 .button {
-  position: absolute;
-  bottom: 15%;  
   cursor: pointer;
   width: 8rem;
   padding: 0.7rem 0;

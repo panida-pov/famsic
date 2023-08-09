@@ -83,7 +83,7 @@ export const Spotify = {
       if(jsonResponse) {
         return jsonResponse.items.map(item => ({
             name: item.name,
-            image: item.images[0].url,
+            image: item.images[0]?.url ?? process.env.PUBLIC_URL + 'img/album.png',
             id: item.id
           }));
       }

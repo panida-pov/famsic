@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from "react-router-dom";
-import Header from "../components/Header/Header";
+import Root from "../components/Root/Root";
 import SignIn from "../components/SignIn/SignIn";
 import Playlists from "../components/Playlists/Playlists";
 import CreatePlaylist from "../components/CreatePlaylist/CreatePlaylist"
 import PlaylistDetails from "../components/PlaylistDetails/PlaylistDetails";
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={<Header/>} >
+  <Route path="/" element={<Root/>} >
     <Route index element={<Playlists/>}></Route>
     <Route path="playlist" element={<PlaylistDetails/>}></Route>
     <Route path="create-playlist" element={<CreatePlaylist/>}></Route>

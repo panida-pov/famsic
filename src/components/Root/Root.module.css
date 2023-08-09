@@ -31,3 +31,14 @@ html {
   font-size: 1.4rem;
   padding-bottom: 1.4rem;
 }
+
+footer {
+  color: rgb(164, 160, 160);
+  text-align: center;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  font-size: 0.6rem;
+}

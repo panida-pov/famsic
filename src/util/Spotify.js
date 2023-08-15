@@ -1,4 +1,4 @@
-const client_id = "14929e4a509244d7b1513f92ff42cdbf";
+const client_id = 'ENTER YOUR CLIENT ID HERE';
 const domain = 'http://localhost:3000/';
 let accessToken;
 let expiresIn;

@@ -2,42 +2,44 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { Spotify } from "../../util/Spotify";
 
 export const createPlaylist = createAsyncThunk(
-  'newPlaylist/createPlaylist',
-  async ({name, uris}) => {
+  "newPlaylist/createPlaylist",
+  async ({ name, uris }) => {
     return await Spotify.createPlaylist(name, uris);
   }
 );
 
 const options = {
-  name: 'newPlaylist',
+  name: "newPlaylist",
   initialState: {
-    playlistName: '',
+    playlistName: "",
     selectedTracks: [],
     isCreating: false,
-    failedtoCreate: false
+    failedtoCreate: false,
   },
   reducers: {
     setName: (state, action) => {
       return {
         ...state,
-        playlistName: action.payload
-      }
+        playlistName: action.payload,
+      };
     },
     addToList: (state, action) => {
-      const ids = state.selectedTracks?.map(item => item.id);
-      if(!ids.includes(action.payload.id)) {
+      const ids = state.selectedTracks?.map((item) => item.id);
+      if (!ids.includes(action.payload.id)) {
         return {
-          ...state, 
-          selectedTracks: [action.payload, ...state.selectedTracks]
+          ...state,
+          selectedTracks: [action.payload, ...state.selectedTracks],
         };
       }
     },
     removeFromList: (state, action) => {
       return {
         ...state,
-        selectedTracks: state.selectedTracks.filter(track => track.id !== action.payload)
+        selectedTracks: state.selectedTracks?.filter(
+          (track) => track.id !== action.payload
+        ),
       };
-    }
+    },
   },
   extraReducers: {
     [createPlaylist.pending]: (state, action) => {
@@ -45,7 +47,7 @@ const options = {
       state.failedtoCreate = false;
     },
     [createPlaylist.fulfilled]: (state, action) => {
-      state.playlistName = '';
+      state.playlistName = "";
       state.selectedTracks = [];
       state.isCreating = false;
       state.failedtoCreate = false;
@@ -54,8 +56,8 @@ const options = {
       state.isCreating = false;
       state.failedtoCreate = true;
     },
-  }
-}
+  },
+};
 
 const newPlaylistSlice = createSlice(options);
 

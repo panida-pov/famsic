@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Aharoni';
-  src: url(/public/font/ahronibd.ttf) format('truetype');
+  font-family: "Aharoni";
+  src: url(/public/font/ahronibd.ttf) format("truetype");
 }
 
 .box {
@@ -18,7 +18,7 @@
 }
 
 .newPlaylistField {
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,7 +47,7 @@
   z-index: 1;
   font-size: 1.8rem;
   top: 0;
-  left:0;
+  left: 0;
 }
 
 .FaCircleLeft {
@@ -56,15 +56,15 @@
   z-index: 10;
   font-size: 1.8rem;
   top: 0;
-  left:0;
+  left: 0;
 }
 
 .FaCircleLeft:hover {
-  color: rgb(186, 143, 65)
+  color: rgb(186, 143, 65);
 }
 
 .title h3 {
-  font-family: 'Aharoni', sans-serif;
+  font-family: "Aharoni", sans-serif;
   font-size: 1.3rem;
   padding-top: 0.2rem;
 }

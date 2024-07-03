@@ -1,5 +1,5 @@
 const client_id = "14929e4a509244d7b1513f92ff42cdbf";
-const domain = "http://localhost:3000/";
+const domain = process.env.REACT_APP_DOMAIN || "http://localhost:3000/";
 let accessToken;
 let expiresIn;
 

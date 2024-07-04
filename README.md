@@ -8,7 +8,8 @@ The main goal of this project is to practice integrating Redux in React web.
 * [![React][React.js]][React-url]
 * [![Redux][Redux.js]][Redux-url]
 
-
+## Live Demo
+https://famsic.onrender.com
 
 ## Features
 * Users can view/search for their existing playlists

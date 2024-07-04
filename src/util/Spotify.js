@@ -89,6 +89,12 @@ export const Spotify = {
       const response = await fetch("https://api.spotify.com/v1/me/playlists", {
         headers: headers,
       });
+
+      if (response.status === 403) {
+        alert("Sorry, but you do not have access to famsic!");
+        window.location = `${domain}sign-in`;
+      }
+
       const jsonResponse = await response.json();
       if (jsonResponse) {
         return jsonResponse.items?.map((item) => ({

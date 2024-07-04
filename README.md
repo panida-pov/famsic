@@ -10,6 +10,8 @@ The main goal of this project is to practice integrating Redux in React web.
 
 ## Live Demo
 https://famsic.onrender.com
+<br />
+(Reach me at panida.pov@gmail.com to request access to famsic)
 
 ## Features
 * Users can view/search for their existing playlists
